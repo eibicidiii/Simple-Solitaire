@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.patience.solitaire">
+          package="com.patience.solitaire">
 
     <application
-        android:name="com.patience.solitaire.MainApplication"
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:fullBackupContent="@xml/my_backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -12,37 +12,36 @@
         android:largeHeap="true"
         android:theme="@style/AppThemeNoActionBar">
         <activity
-            android:name="com.patience.solitaire.ui.about.AboutActivity"
+            android:name=".ui.about.LicenseActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/about_name"
-            android:theme="@style/AppThemeActionBar" />
+            android:label="@string/license_name"
+            android:theme="@style/AppThemeActionBar"/>
         <activity
-            android:name="com.patience.solitaire.ui.Statistics"
+            android:name=".ui.Statistics"
             android:label="@string/title_activity_statistics"
-            android:theme="@style/AppThemeActionBar" />
+            android:theme="@style/AppThemeActionBar"/>
         <activity
-            android:name="com.patience.solitaire.ui.settings.Settings"
+            android:name=".ui.settings.Settings"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppThemeActionBar" />
-
+            android:theme="@style/AppThemeActionBar"/>
+        <activity android:name=".ui.GameManager"/>
         <activity
-            android:name="com.patience.solitaire.ui.settings.SettingsGames"
+            android:name=".ui.manual.Manual"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/game_manual"
+            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".ui.settings.SettingsGames"
             android:label="@string/settings_games"
             android:theme="@style/AppThemeActionBar" />
 
-        <activity android:name="com.patience.solitaire.ui.GameManager" />
         <activity
-            android:name="com.patience.solitaire.ui.manual.Manual"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/game_manual"
-            android:theme="@style/AppThemeNoActionBar" />
-        <activity
-            android:name="com.patience.solitaire.ui.GameSelector"
+            android:name=".ui.GameSelector"
             android:label="@string/app_name"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>

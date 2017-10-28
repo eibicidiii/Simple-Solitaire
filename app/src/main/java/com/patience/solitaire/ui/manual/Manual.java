@@ -207,9 +207,6 @@ public class Manual extends CustomAppCompatActivity
             case R.id.nav_games:
                 fragmentClass = ManualGames.class;
                 break;
-            case R.id.nav_feedback:
-                fragmentClass = ManualFeedback.class;
-                break;
         }
 
         loadFragment(fragmentClass);
@@ -247,9 +244,6 @@ public class Manual extends CustomAppCompatActivity
                 break;
             case 3:
                 fragmentClass = ManualGames.class;
-                break;
-            case 4:
-                fragmentClass = ManualFeedback.class;
                 break;
         }
 

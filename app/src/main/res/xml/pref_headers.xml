@@ -12,10 +12,9 @@
     <header
         android:summary="@string/settings_games_description"
         android:title="@string/settings_games" >
-
         <intent
-            android:targetClass="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames"
-            android:targetPackage="de.tobiasbielefeld.solitaire" />
+            android:targetClass="com.patience.solitaire.ui.settings.SettingsGames"
+            android:targetPackage="com.games.patience.solitaire" />
     </header>
 
     <header
@@ -32,14 +31,5 @@
         android:fragment="com.patience.solitaire.ui.settings.Settings$OtherPreferenceFragment"
         android:summary="@string/settings_other_description"
         android:title="@string/settings_other" />
-
-    <!--
-    <header
-        android:summary="@string/settings_about_description"
-        android:title="@string/about_name">
-        <intent
-            android:targetClass="com.games.patience.com.games.patience.solitaire.patience.com.games.patience.solitaire.ui.about.AboutActivity"
-            android:targetPackage="com.games.patience.com.games.patience.solitaire.patience.com.games.patience.solitaire" />
-    </header> -->
 
 </preference-headers>

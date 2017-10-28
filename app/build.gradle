@@ -6,21 +6,41 @@ android {
     defaultConfig {
         //buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
         applicationId 'com.games.patience.solitaire'
-        minSdkVersion 19
+        minSdkVersion 18
         targetSdkVersion 25
         versionCode 1
         versionName "0.1"
 
         vectorDrawables.useSupportLibrary = true
     }
+
     buildTypes {
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                output.outputFile = new File(
+                        output.outputFile.parent,
+                        output.outputFile.name.replace("app", ("patience_solitaire-" + versionCode)))
+            }
+        }
         release {
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            proguardFile 'proguard-android.txt'
+            debuggable false
+            jniDebuggable false
+            zipAlignEnabled true
         }
     }
-    sourceSets { main { java.srcDirs = ['src/main/java'] } }
-    productFlavors {
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
     }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    //sourceSets { main { java.srcDirs = ['src/main/java'] } }
+
 }
 
 dependencies {

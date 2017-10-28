@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 import com.patience.solitaire.R;
 import com.patience.solitaire.classes.CustomAppCompatActivity;
-import com.patience.solitaire.ui.about.AboutActivity;
+import com.patience.solitaire.ui.about.LicenseActivity;
 import com.patience.solitaire.ui.manual.Manual;
 import com.patience.solitaire.ui.settings.Settings;
 
@@ -91,7 +91,7 @@ public class GameSelector extends CustomAppCompatActivity implements NavigationV
                 startActivity(new Intent(getApplicationContext(), Manual.class));
                 break;
             case R.id.item_about:
-                startActivity(new Intent(getApplicationContext(), AboutActivity.class));
+                startActivity(new Intent(getApplicationContext(), LicenseActivity.class));
                 break;
             case R.id.item_close:
                 finish();

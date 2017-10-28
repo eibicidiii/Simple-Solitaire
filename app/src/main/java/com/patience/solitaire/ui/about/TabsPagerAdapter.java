@@ -51,11 +51,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public android.support.v4.app.Fragment getItem(int index) {
         switch (index) {
             case 0:
-                return new InformationFragment();
-            case 1:
                 return new LicenseFragment();
-            case 2:
-                return new ChangeLogFragment();
         }
 
         return null;

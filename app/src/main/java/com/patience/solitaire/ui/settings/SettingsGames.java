@@ -47,7 +47,8 @@ import static com.patience.solitaire.helper.Preferences.*;
  * Settings activity created with the "Create settings activity" tool from Android Studio.
  */
 
-public class SettingsGames extends AppCompatPreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class SettingsGames extends AppCompatPreferenceActivity implements
+        SharedPreferences.OnSharedPreferenceChangeListener {
 
     private Toast toast;
     private Preference preferenceVegasBetAmount;
@@ -325,7 +326,8 @@ public class SettingsGames extends AppCompatPreferenceActivity implements Shared
 
             SettingsGames settings = (SettingsGames) getActivity();
 
-            settings.preferenceVegasBetAmount = findPreference(getString(R.string.pref_key_vegas_bet_amount));
+            settings.preferenceVegasBetAmount = findPreference(getString(
+                    R.string.pref_key_vegas_bet_amount));
             settings.updatePreferenceVegasBetAmountSummary();
         }
     }

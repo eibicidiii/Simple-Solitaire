@@ -33,13 +33,13 @@ import com.patience.solitaire.classes.CustomAppCompatActivity;
  * The About activity contains 3 tabs. The content of the tabs is in the fragments
  */
 
-public class AboutActivity extends CustomAppCompatActivity{
+public class LicenseActivity extends CustomAppCompatActivity{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activty_about);
-
+/*
         ActionBar actionBar = getSupportActionBar();
 
         if (actionBar!=null) {
@@ -51,12 +51,12 @@ public class AboutActivity extends CustomAppCompatActivity{
         TabsPagerAdapter adapter = new TabsPagerAdapter(getSupportFragmentManager(), this);
 
         pager.setAdapter(adapter);
-        tabs.setViewPager(pager);
+        tabs.setViewPager(pager);*/
     }
-
+/*
     public boolean onOptionsItemSelected(MenuItem item) {
         //only menu item is the back button in the action bar so finish this activity
         finish();
         return true;
-    }
+    }*/
 }

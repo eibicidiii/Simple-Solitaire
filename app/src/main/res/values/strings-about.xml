@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-
+    <string name="license_name">Licenses</string>
     <string name="about_name">About Game</string>
     <string name="about_tab_1">Information</string>
     <string name="about_tab_2">Licenses</string>
