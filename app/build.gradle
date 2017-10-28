@@ -1,16 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-
     compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    buildToolsVersion '26.0.2'
     defaultConfig {
-        buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
-        applicationId "de.tobiasbielefeld.solitaire"
-        minSdkVersion 11
+        //buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
+        applicationId 'com.games.patience.solitaire'
+        minSdkVersion 19
         targetSdkVersion 25
-        versionCode 58
-        versionName "3.9"
+        versionCode 1
+        versionName "0.1"
 
         vectorDrawables.useSupportLibrary = true
     }
@@ -20,6 +19,8 @@ android {
         }
     }
     sourceSets { main { java.srcDirs = ['src/main/java'] } }
+    productFlavors {
+    }
 }
 
 dependencies {

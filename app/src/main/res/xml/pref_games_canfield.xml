@@ -3,7 +3,7 @@
 
     <PreferenceCategory android:title="@string/settings_cards">
 
-        <de.tobiasbielefeld.solitaire.classes.ListPreferenceWithSummary
+        <com.patience.solitaire.classes.ListPreferenceWithSummary
             android:defaultValue="3"
             android:entries="@array/pref_draw_titles"
             android:entryValues="@array/pref_draw_values"

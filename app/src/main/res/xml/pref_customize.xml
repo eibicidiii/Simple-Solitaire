@@ -1,14 +1,14 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory android:title="@string/manual_ui">
-        <de.tobiasbielefeld.solitaire.dialogs.DialogPreferenceMenuBarPosition
+        <com.patience.solitaire.dialogs.DialogPreferenceMenuBarPosition
             android:key="@string/pref_key_menu_bar_position"
             android:negativeButtonText="@string/game_cancel"
             android:positiveButtonText="@string/game_confirm"
             android:summary="Portrait: Bottom, Landscape: Right"
             android:title="@string/settings_menu_bar_position" />
 
-        <de.tobiasbielefeld.solitaire.dialogs.DialogPreferenceBackgroundColor
+        <com.patience.solitaire.dialogs.DialogPreferenceBackgroundColor
             android:key="@string/pref_key_background_color"
             android:negativeButtonText="@string/settings_background_color_custom"
             android:positiveButtonText="@string/game_cancel"
@@ -38,7 +38,7 @@
 
     <PreferenceCategory android:title="@string/settings_cards">
 
-        <de.tobiasbielefeld.solitaire.dialogs.DialogPreferenceCardDialog
+        <com.patience.solitaire.dialogs.DialogPreferenceCardDialog
             android:key="@string/pref_key_cards"
             android:negativeButtonText="@string/game_cancel"
             android:positiveButtonText="@null"
@@ -46,7 +46,7 @@
             android:title="@string/settings_cards"
             android:widgetLayout="@layout/preference_widget_layout_cards" />
 
-        <de.tobiasbielefeld.solitaire.dialogs.DialogPreferenceCardBackground
+        <com.patience.solitaire.dialogs.DialogPreferenceCardBackground
             android:key="@string/pref_key_cards_background"
             android:negativeButtonText="@string/game_cancel"
             android:positiveButtonText="@string/game_confirm"
