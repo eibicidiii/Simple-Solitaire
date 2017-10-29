@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.patience.solitaire">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="remove"/>
 
     <application
         android:name=".MainApplication"
@@ -8,7 +22,7 @@
         android:fullBackupContent="@xml/my_backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:installLocation="auto"
-        android:label="@string/app_name"
+        android:label="@string/application_name"
         android:largeHeap="true"
         android:theme="@style/AppThemeNoActionBar">
         <activity
@@ -33,11 +47,11 @@
         <activity
             android:name=".ui.settings.SettingsGames"
             android:label="@string/settings_games"
-            android:theme="@style/AppThemeActionBar" />
+            android:theme="@style/AppThemeActionBar"/>
 
         <activity
             android:name=".ui.GameSelector"
-            android:label="@string/app_name"
+            android:label="@string/application_name"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

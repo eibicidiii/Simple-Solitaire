@@ -23,6 +23,8 @@ import android.content.res.Resources;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import com.patience.solitaire.games.AcesUp;
 import com.patience.solitaire.games.Calculation;
@@ -65,7 +67,9 @@ public class LoadGame {
      * @param index The index of the game to start
      */
     public Game loadClass(Activity activity, int index) {
-
+if (true) {
+    throw new RuntimeException("sadfd");
+}
         sharedPrefName = allGameInformation.get(index).getSharedPrefName();
         gameName = allGameInformation.get(index).getName(activity.getResources());
 
@@ -177,10 +181,37 @@ public class LoadGame {
         ArrayList<Integer> result = prefs.getSavedMenuOrderList();
 
         if (result.isEmpty()){                                                                      //get default order
+            result.addAll(Arrays.asList(new Integer[] {6, 7, 8, 9, 0, 5, 10, 11, 1, 12, 13, 14, 4, 15, 2, 3}));
+/*
+            8allGameInformation.add(new AllGameInformation(R.string.games_Klondike,"Klondike"));
+            4allGameInformation.add(new AllGameInformation(R.string.games_Freecell,"Freecell"));
+            14allGameInformation.add(new AllGameInformation(R.string.games_Vegas,"Vegas"));
+            15allGameInformation.add(new AllGameInformation(R.string.games_Yukon,"Yukon"));
+            12allGameInformation.add(new AllGameInformation(R.string.games_Spider,"Spider"));
+            5allGameInformation.add(new AllGameInformation(R.string.games_Golf,"Golf"));
+
+            0allGameInformation.add(new AllGameInformation(R.string.games_AcesUp,"AcesUp"));
+            1allGameInformation.add(new AllGameInformation(R.string.games_Calculation,"Calculation"));
+            2allGameInformation.add(new AllGameInformation(R.string.games_Canfield,"Canfield"));
+            3allGameInformation.add(new AllGameInformation(R.string.games_FortyEight,"FortyEight"));
+            6allGameInformation.add(new AllGameInformation(R.string.games_GrandfathersClock,"GrandfathersClock"));
+            7allGameInformation.add(new AllGameInformation(R.string.games_Gypsy,"Gypsy"));
+            9allGameInformation.add(new AllGameInformation(R.string.games_mod3,"mod3"));
+            10allGameInformation.add(new AllGameInformation(R.string.games_Pyramid,"Pyramid"));
+            11allGameInformation.add(new AllGameInformation(R.string.games_SimpleSimon,"SimpleSimon"));
+            13allGameInformation.add(new AllGameInformation(R.string.games_TriPeaks,"TriPeaks"));
+            */
+/*
             for (int i=0;i<getGameCount();i++){
                 result.add(i);
-            }
+            }*/
         }
+
+
+
+
+
+
 
        /*
          * If added more games, insert them here in the correct order. Don't forget to add it also

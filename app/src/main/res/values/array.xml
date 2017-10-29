@@ -61,7 +61,6 @@
         <item>@string/manual_main_menu</item>
         <item>@string/manual_ui</item>
         <item>@string/manual_games</item>
-        <item>@string/manual_feedback</item>
         <item>@string/manual_back_to_game</item>
     </string-array>
 
@@ -85,7 +84,6 @@
         <item>Start new game</item>
         <item>Give cards again</item>
         <item>Game rules</item>
-        <item>Return to main menu</item>
     </string-array>
 
     <string-array name="won_menu">

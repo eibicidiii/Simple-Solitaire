@@ -18,9 +18,6 @@
         <item
             android:id="@+id/nav_games"
             android:title="@string/manual_games" />
-        <item
-            android:id="@+id/nav_feedback"
-            android:title="@string/manual_feedback" />
     </group>
     <group android:id="@+id/idgroup2" >
         <item

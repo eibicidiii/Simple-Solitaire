@@ -30,12 +30,15 @@ import com.patience.solitaire.ui.settings.Settings;
 import static com.patience.solitaire.SharedData.*;
 import static com.patience.solitaire.helper.Preferences.DEFAULT_CURRENT_GAME;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 public class GameSelector extends CustomAppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnTouchListener {
 
     private TableLayout tableLayout;
     private NavigationView navigationView;
     private int menuColumns;
     private ArrayList<Integer> indexes = new ArrayList<>();
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +57,9 @@ public class GameSelector extends CustomAppCompatActivity implements NavigationV
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         tableLayout = (TableLayout) findViewById(R.id.tableLayoutGameChooser);
 
@@ -240,15 +246,21 @@ public class GameSelector extends CustomAppCompatActivity implements NavigationV
         int index = indexes.get(table.indexOfChild(row)*menuColumns + row.indexOfChild(view));
         index = orderedList.indexOf(index);
 
+        // Log event
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, String.valueOf(index));
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Selected game nr");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+
         //avoid loading two games at once when pressing two buttons at once
         if (prefs.getSavedCurrentGame() != 0) {
             return;
         }
-
         prefs.saveCurrentGame(index);
         Intent intent = new Intent(getApplicationContext(), GameManager.class);
         intent.putExtra(GAME, index);
         startActivityForResult(intent, 0);
     }
+
 
 }

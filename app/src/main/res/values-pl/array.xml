@@ -4,7 +4,6 @@
         <item>Rozpocznij nową grę</item>
         <item>Ponownie rozdaj karty</item>
         <item>Zasady gry</item>
-        <item>Powrót do menu głównego</item>
     </string-array>
 
     <string-array name="won_menu">

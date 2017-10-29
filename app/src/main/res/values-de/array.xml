@@ -4,7 +4,6 @@
         <item>Neues Spiel starten</item>
         <item>Spiel wiederholen</item>
         <item>Spielregeln</item>
-        <item>Zurück zum Hauptmenü</item>
     </string-array>
 
     <string-array name="won_menu">

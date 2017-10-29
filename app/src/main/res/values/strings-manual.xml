@@ -23,7 +23,7 @@
     <!-- Games -->
     <string name="manual_games_text1">Choose a game to show it\'s structure, objective, rules and scoring.</string>
     <string name="manual_startpage_text">Welcome to the manual of this game collection! I hope it will explain everything.
-        \n\nUse the menu on the left side to access the other manual pages.</string>
+        \n\n<font color="red">Use the menu on the left side to access the other manual pages.</font></string>
     <string name="manual_general_main_menu">The usage of the main menu is relatively simple. Just tap on a game to start it.
         \n\nThe app will automatically load the last played game on a restart, if the app was paused in it. This behavior can
         be disabled in the settings under \"General\".\n\nThere you can also find the section \"Main menu\", where it\'s possible to hide games

@@ -4,7 +4,6 @@
         <item>Démarrer une nouvelle partie</item>
         <item>Redistribuer les cartes</item>
         <item>Règles du jeu</item>
-        <item>Revenir au menu principal</item>
     </string-array>
 
     <string-array name="won_menu">
