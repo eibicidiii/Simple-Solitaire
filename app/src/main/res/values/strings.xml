@@ -16,7 +16,7 @@
     <string name="game_press_again">Press again to exit</string>
     <string name="game_load_error">Loading data failed, starting new game…</string>
     <string name="game_close">Close game</string>
-    <string name="game_main_menu">Main menu</string>
+    <string name="game_main_menu">Open main menu</string>
 
     <!-- Menu -->
     <string name="menu_statistics">Scores</string>

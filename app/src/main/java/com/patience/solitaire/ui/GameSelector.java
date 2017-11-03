@@ -248,9 +248,8 @@ public class GameSelector extends CustomAppCompatActivity implements NavigationV
 
         // Log event
         Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, String.valueOf(index));
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Selected game nr");
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+        bundle.putInt(FirebaseAnalytics.Param.VALUE, index);
+        mFirebaseAnalytics.logEvent("SelectedGame", bundle);
 
         //avoid loading two games at once when pressing two buttons at once
         if (prefs.getSavedCurrentGame() != 0) {

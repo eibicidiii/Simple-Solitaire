@@ -67,9 +67,6 @@ public class LoadGame {
      * @param index The index of the game to start
      */
     public Game loadClass(Activity activity, int index) {
-if (true) {
-    throw new RuntimeException("sadfd");
-}
         sharedPrefName = allGameInformation.get(index).getSharedPrefName();
         gameName = allGameInformation.get(index).getName(activity.getResources());
 

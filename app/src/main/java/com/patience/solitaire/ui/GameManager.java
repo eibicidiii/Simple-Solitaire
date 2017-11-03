@@ -35,6 +35,7 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.patience.solitaire.R;
 import com.patience.solitaire.classes.Card;
 import com.patience.solitaire.classes.CardAndStack;
@@ -75,7 +76,7 @@ public class GameManager extends CustomAppCompatActivity implements View.OnTouch
     private CardAndStack tapped = null;
     private RelativeLayout mainRelativeLayoutBackground;
     private boolean activityPaused;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     /*
      * Set up everything for the game. First get the ui elements, then initialize my helper stuff.
@@ -113,6 +114,15 @@ public class GameManager extends CustomAppCompatActivity implements View.OnTouch
 
         updateMenuBar();
 
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        // Log event
+        String gameName = currentGame.getClass().getName();
+        Bundle bundle = new Bundle();
+        bundle.putInt(FirebaseAnalytics.Param.VALUE, getIntent().getIntExtra(GAME, 1));
+        bundle.putString("game_name", gameName);
+        mFirebaseAnalytics.logEvent("CurrentGame", bundle);
 
         //initialize cards and stacks
         for (int i = 0; i < stacks.length; i++) {
