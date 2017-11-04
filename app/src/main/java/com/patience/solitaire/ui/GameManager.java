@@ -118,7 +118,7 @@ public class GameManager extends CustomAppCompatActivity implements View.OnTouch
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         // Log event
-        String gameName = currentGame.getClass().getName();
+        String gameName = currentGame.getClass().getSimpleName();
         Bundle bundle = new Bundle();
         bundle.putInt(FirebaseAnalytics.Param.VALUE, getIntent().getIntExtra(GAME, 1));
         bundle.putString("game_name", gameName);

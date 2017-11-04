@@ -5,6 +5,7 @@ buildscript {
         mavenCentral()
         jcenter()
         maven { url 'https://maven.google.com' }
+        maven { url "https://s3.amazonaws.com/moat-sdk-builds" }
     }
 
     dependencies {
@@ -24,6 +25,7 @@ allprojects {
         mavenCentral()
         jcenter()
         maven { url 'https://maven.google.com' }
+        maven { url "https://s3.amazonaws.com/moat-sdk-builds" }
     }
 }
 

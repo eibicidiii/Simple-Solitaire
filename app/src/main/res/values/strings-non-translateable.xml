@@ -75,6 +75,7 @@
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
     <string name="changelog_URL" translatable="false">file:///android_asset/changelog.html</string>
+    <string name="about_app_name_link" translatable="false">Fork of Simple Solitaire. <a href="file:///android_asset/changelog">Changelog</a></string>
     <string name="about_app_license_link" translatable="false"><a href="https://www.gnu.org/licenses/gpl.html">GPL v3.0</a></string>
 
     <string name="canfield_start_value" translatable="false">canfield_startCardValue</string>

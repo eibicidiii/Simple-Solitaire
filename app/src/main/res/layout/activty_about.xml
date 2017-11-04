@@ -396,7 +396,7 @@
                         android:layout_toLeftOf="@+id/license_patience_solitaire"
                         android:gravity="left"
                         android:singleLine="true"
-                        android:text="Patience Solitaire"
+                        android:text="Patience Solitaire (Solitaire Games Collection)"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
 
@@ -423,7 +423,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:text="Fork of Simple Solitaire"
+                    android:text="@string/about_app_name_link"
                     android:padding="6dp"/>
 
             </LinearLayout>

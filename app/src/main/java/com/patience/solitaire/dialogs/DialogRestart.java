@@ -78,14 +78,13 @@ public class DialogRestart extends DialogFragment {
                     }
                 }
                 );
-        builder.setNegativeButton(R.string.game_main_menu, new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.game_to_main_menu, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 if (gameManager.hasLoaded) {
                     timer.save();
                     gameLogic.setWonAndReloaded();
                     gameLogic.save();
                 }
-
                 gameManager.finish();
             }
         });
