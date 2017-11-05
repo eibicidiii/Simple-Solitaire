@@ -33,6 +33,9 @@ import static com.patience.solitaire.helper.Preferences.PREF_KEY_VEGAS_NUMBER_OF
 
 public class Vegas extends Klondike {
 
+    public String getLogName() {
+        return "Vegas";
+    }
     private int betAmount=50;
 
     public Vegas(){

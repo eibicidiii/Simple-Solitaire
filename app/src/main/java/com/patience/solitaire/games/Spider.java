@@ -39,6 +39,11 @@ import static com.patience.solitaire.games.Game.testMode3.*;
 
 public class Spider extends Game {
 
+    public String getLogName() {
+        return "Spider";
+    }
+
+
     public Spider() {
         setNumberOfDecks(2);
         setNumberOfStacks(23);

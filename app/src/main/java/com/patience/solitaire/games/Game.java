@@ -65,6 +65,8 @@ public abstract class Game {
     private int undoCosts = 25;
     protected ArrayList<TextView> textViews = new ArrayList<>();
 
+    public abstract String getLogName();
+
     /**
      * Called to test where the given card can be moved to
      *

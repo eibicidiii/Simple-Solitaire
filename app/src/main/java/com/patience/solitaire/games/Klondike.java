@@ -42,6 +42,11 @@ import static com.patience.solitaire.helper.Preferences.PREF_KEY_KLONDIKE_NUMBER
 
 public class Klondike extends Game {
 
+    public String getLogName() {
+        return "Klondike";
+    }
+
+
     protected int whichGame;
 
     public Klondike() {

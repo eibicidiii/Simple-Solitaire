@@ -38,6 +38,11 @@ import static com.patience.solitaire.helper.Preferences.PREF_KEY_PYRAMID_NUMBER_
 
 public class Pyramid extends Game {
 
+    public String getLogName() {
+        return "Pyramid";
+    }
+
+
     int[] stackAboveID = new int[28];
 
     ArrayList<Card> cardsToMove = new ArrayList<>();

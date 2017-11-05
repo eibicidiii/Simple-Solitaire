@@ -46,6 +46,10 @@ public class Yukon extends Game {
         setHasFoundationStacks(true);
     }
 
+    public String getLogName() {
+        return "Yukon";
+    }
+
     public void setStacks(RelativeLayout layoutGame, boolean isLandscape, Context context) {
         //initialize the dimensions
         setUpCardDimensions(layoutGame, 9, 5);

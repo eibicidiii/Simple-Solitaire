@@ -38,6 +38,11 @@ import static com.patience.solitaire.games.Game.testMode3.*;
 
 public class Gypsy extends Game {
 
+    public String getLogName() {
+        return "Gypsy";
+    }
+
+
     public Gypsy() {
         setNumberOfDecks(2);
         setNumberOfStacks(17);

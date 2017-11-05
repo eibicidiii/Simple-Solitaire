@@ -35,6 +35,11 @@ import static com.patience.solitaire.SharedData.*;
 
 public class Mod3 extends Game {
 
+    public String getLogName() {
+        return "Mod3";
+    }
+
+
     public Mod3() {
         setNumberOfDecks(2);
         setNumberOfStacks(34);

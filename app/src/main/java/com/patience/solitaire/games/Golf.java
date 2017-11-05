@@ -42,6 +42,10 @@ import static com.patience.solitaire.SharedData.*;
 
 public class Golf extends Game {
 
+    public String getLogName() {
+        return "Golf";
+    }
+
     static int MAX_SAVED_RUN_RECORDS = RecordList.MAX_RECORDS;
 
     int runCounter; //to count how many cards are moved in one "run"

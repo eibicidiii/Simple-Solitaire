@@ -39,6 +39,10 @@ import static com.patience.solitaire.SharedData.*;
 
 public class TriPeaks extends Game {
 
+    public String getLogName() {
+        return "TriPeaks";
+    }
+
     static int MAX_SAVED_RUN_RECORDS = RecordList.MAX_RECORDS;
     //contains which stack is above another stack. So stackAboveID[0]=3 means, that above stack
     //with index 0 are the stacks with index 3 and 3+1

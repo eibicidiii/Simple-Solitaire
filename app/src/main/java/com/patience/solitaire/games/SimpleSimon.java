@@ -37,6 +37,11 @@ import static com.patience.solitaire.games.Game.testMode.*;
 
 public class SimpleSimon extends Spider {
 
+    public String getLogName() {
+        return "SimpleSimon";
+    }
+
+
     public SimpleSimon() {
         setNumberOfDecks(1);
         setNumberOfStacks(14);
